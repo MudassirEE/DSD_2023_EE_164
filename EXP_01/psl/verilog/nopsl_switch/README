@@ -1,0 +1,38 @@
+                Unpublished work. Copyright 2024 Siemens
+
+    This material contains trade secrets or otherwise confidential 
+    information owned by Siemens Industry Software Inc. or its 
+    affiliates (collectively, "SISW"), or its licensors. Access to 
+    and use of this information is strictly limited as set forth in 
+    the Customer's applicable agreements with SISW.
+
+    This material may not be copied, distributed, or otherwise 
+    disclosed outside of the Customer's facilities without the express 
+    written permission of SISW, and may not be used in any way not 
+    expressly authorized by SISW.
+
+The compiler(vlog/vcom) -nopsl switch disables any embedded PSL
+parsing - this will prevent parsing of any code within
+the PSL metacomment - including any HDL code in the metacomment.
+It has no effect on the vunit parsing in any way. If you provide
+a vunit file using the -pslfile switch then the entire vunit
+will get and code will be generated for it.
+
+If you simulate with the vsim -nopsl switch, evaluation of all PSL
+assume/assert/cover directives and endpoints will be disabled. It
+will not, however, affect any HDL code which was present in
+a PSL metacomment or in a vunit.
+
+1. transcript1
+   The -nopsl is not used during compile or simulation.
+   This will display the TEST and VUNIT messages and evaluate assertions A_V and A_E.
+2. transcript2
+   The -nopsl switch is only used during simulation.
+   This will display both the TEST and VUNIT messages.
+3. transcript3
+   The -nopsl switch is used only during compile.
+   This will display only the VUNIT messages and evaluate assertion A_V.
+4. transcript3
+   The -nopsl switch is used during compile and simulation.
+   This will display only the VUNIT messages.
+

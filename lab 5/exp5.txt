@@ -1,0 +1,6 @@
+EXP:5
+Roll no: 2023-EE-164(B)
+
+=>This code is about 7-Segment Display.Basically it is a combinational circuit designing using vivado.
+=>It includes when and how diferent inputs are given and desired outputs obtained.
+=>Includes the FPGA and determination of truth tables( for correct on/off of switches so that correct output is obtained.  

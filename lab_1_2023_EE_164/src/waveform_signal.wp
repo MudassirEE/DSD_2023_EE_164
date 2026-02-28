@@ -1,0 +1,78 @@
+{
+  "sampleCount": 5,
+  "subStepCount": 0,
+  "arrowColor": "#ff0000",
+  "signals": [
+    {
+      "name": "A",
+      "type": "bit",
+      "color": "#000000",
+      "riseTime": 0,
+      "fallTime": 0,
+      "edgeArrow": "none",
+      "values": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "B",
+      "type": "bit",
+      "color": "#000000",
+      "riseTime": 0,
+      "fallTime": 0,
+      "edgeArrow": "none",
+      "values": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "Y",
+      "type": "bit",
+      "color": "#000000",
+      "riseTime": 0,
+      "fallTime": 0,
+      "edgeArrow": "none",
+      "values": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "labels": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "markers": [],
+  "timeJumps": [],
+  "timeSpanMarkers": [],
+  "arrows": [],
+  "textAnnotations": []
+}
